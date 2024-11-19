@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Fugindo da cadeia</title>
+</head>
+
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0-cela.jpeg" alt="Cela da cadeia">
+            <p>
+                Você é um prisioneiro em uma das cadeias mais protegidas do mundo, e um belo dia você percebe que por
+                sorte as barras da sua cela estão frouxas por falta de manutenção, e ali surge uma oportunidade.
+            </p>
+            <button class="btn-proximo" data-proximo="1">Tentar escapar.</button>
+            ou
+            <button class="btn-proximo" data-proximo="2">Desistir e continuar na cela.</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>
+                Você quebra as barras frouxas da cela e se depara com um corredor enorme, caminhando discretamente por
+                ele você chega a um lugar onde há dois caminhos, direita ou esquerda.
+            </p>
+            <button class="btn-proximo" data-proximo="3">Direita</button>
+            ou
+            <button class="btn-proximo" data-proximo="4">Esquerda</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <img src="img/cenario-passo2-interior.jpeg" alt="Interior da cela.">
+            <p>Você desiste da ideia de fugir e acaba ficando na cela.</p>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Andando pelo caminho da direita você percebe ao longe um guarda sentado do lado de uma porta, ele parece
+                estar dormindo e a porta está destrancada.</p>
+            <button class="btn-proximo" data-proximo="5">Tentar pegar a arma do segurança.</button>
+            ou
+            <button class="btn-proximo" data-proximo="6">Passar pela porta silenciosamente.</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <p>Você pega o caminho da esquerda e andando um pouco você vê uma ventilação aberta e mais a frente uma
+                porta com uma maçaneta normal.</p>
+            <button class="btn-proximo" data-proximo="7">Entrar na ventilação.</button>
+            ou
+            <button class="btn-proximo" data-proximo="8">Tentar destrancar a porta.</button>
+        </div>
+        <div class="passo" id="passo-5">
+            <img src="img/cenario-passoX-sendo-pego.jpeg" alt="Você foi pego">
+            <p> Você tenta arriscar e pegar a arma do segurança, mas essa foi uma péssima ideia e voicê acaba sendo pego
+                por ele e voltando para sua cela.</p>
+        </div>
+        <div class="passo" id="passo-6">
+            <img src="img/cenario-passox-livre.jpeg" alt="Você está livre.">
+            <p>Você consegue passar discretamente pelo segurança sem ser notado, conseguindo com muita sorte escapar da
+                cadeia pela porta da frente.</p>
+        </div>
+        <div class="passo" id="passo-7">
+            <img src="img/cenario-passo7-fugindo.jpeg" alt="Fugindo pela ventilação.">
+            <p> Você se espreme pela ventição e depois de um tempo engatinhando pelas tubulações você consegue sair por
+                uma saída de ar que dá pra fora do muro da cadeia, assim conseguindo escapar.</p>
+        </div>
+        <div class="passo" id="passo-8">
+            <img src="img/cenario-passoX-sendo-pego.jpeg" alt="Você foi pego.">
+            <p>Você tenta destrancar a porta com um clips que havia no bolso do seu uniforme da cadeia mas acaba
+                disparando o alarme da cadeia no processo, fazendo os guardas se alertarem e você ser pego e jogado de
+                volta na sua cela.</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
